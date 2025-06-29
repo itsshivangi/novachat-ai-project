@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Fan Reply Generator</title>
+</head>
+<body>
+    <h1>AI Fan Reply Generator</h1>
+    <form method="POST">
+        <label for="fanMessage">Fan Message:</label><br>
+        <textarea name="fanMessage" rows="5" cols="50" placeholder="Hey beautiful, what are you doing?"></textarea><br><br>
+        <input type="submit" value="Generate Reply">
+    </form>
+
+    {% if reply %}
+        <h3>AI Response:</h3>
+        <p>{{ reply }}</p>
+    {% endif %}
+</body>
+</html>
